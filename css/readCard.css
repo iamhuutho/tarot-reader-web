@@ -1,0 +1,237 @@
+/* Reading Cards */
+.readCard-modal-wrapper-show {
+  display: flex !important;
+  flex-direction: column;
+  background-color: #e5d4e8;
+  box-shadow: 0px 0px 30px #724200 inset;
+}
+
+.modal-content {
+  flex: 1;
+}
+
+#readCard-modal-top {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+#readCard-modal-title {
+  flex: 1;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "MedievalSharp", serif;
+  color: #985e00;
+}
+
+#readCard-close-modal {
+  position: absolute;
+}
+
+#readCard-modal-navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "MedievalSharp", serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #b79661;
+  border-top: 1px solid #985e00;
+  border-bottom: 1px solid #985e00;
+}
+
+.readCard-nav-tag {
+  height: 60px;
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.readCard-tag-active {
+  background-color: #f7ddb4;
+  color: #985e00;
+}
+
+.readCard-nav-tag:hover, #readCard-next-btn:hover {
+  background-color: #985e00;
+  color: #f7ddb4;
+}
+
+#readCard-modal-content h3 {
+  color: #985e00;
+  font-family: "MedievalSharp", serif;
+  font-size: large;
+}
+
+#readCard-modal-content p {
+  font-size: medium;
+}
+
+#readCard-modal-content {
+  height: 100%;
+  flex:1;
+  padding: 10px;
+}
+
+#readCard-content-wrapper {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+#readCard-dialog {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "MedievalSharp", serif;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #985e00;
+  transition: 0.5s;
+}
+
+#readCard-next-btn {
+  padding: 16px;
+  font-family: "MedievalSharp", serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #985e00;
+  background-color: #f7ddb4;
+  border: none;
+  border-radius: 16px;
+}
+
+.light{ 
+  position:relative;
+  width:160px;
+  height: 80px;
+  background: #804f00;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.light:before{ 
+  content:'';
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width:100%;
+  height:40px;
+  background:#fdd9a5;
+  border-radius:50%;
+  border:10px solid #985e00;
+  box-sizing:border-box;
+}
+
+.light:after{ 
+  content:'';
+  position:absolute;
+  top: calc(-65%);
+  left:50%;
+  transform:translateX(-50%);
+  width: 20px;
+  height:50px;
+  border-radius:50%;
+  background:rgb(252, 224, 205);
+  box-shadow: 0 0 0 5px #ffbd5a,
+              0 0 0 10px rgba(255, 98, 98, 0.2);
+  filter: blur(5px);
+  animation: animate 2s linear infinite;
+  transform-origin:bottom;			 
+}
+@keyframes animate{
+  0%{
+    transform:translateX(-50%)scaleY(1)rotate(0deg);
+  }
+  25%{
+    transform:translateX(-50%)scaleY(1.4)rotate(10deg);
+  }
+  50%{
+    transform:translateX(-50%)scaleY(1)rotate(0deg);
+  }
+  75%{
+    transform:translateX(-50%)scaleY(1)rotate(-10deg);
+  }
+  100%{
+    transform:translateX(-50%)scaleY(1)rotate(0deg);
+  }
+}
+
+#readCard-result-wrapper {
+  height: 80%;
+  display: flex;
+  background-color: #fdd9a5;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 16px;
+}
+
+#readCard-img-holder {
+  height: 100%;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#readCard-img-holder img {
+  height: 100%;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+#readCard-card-content {
+  height: 100%;
+  background-color: #ffecd0;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+#readCard-card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  /* gap: 4px; */
+}
+
+#readCard-card-name {
+  font-family: "MedievalSharp", serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #985e00;
+}
+
+#readCard-card-key {
+  font-size: medium;
+  font-style: italic;
+}
+
+#readCard-card-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

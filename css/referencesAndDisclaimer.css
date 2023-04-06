@@ -1,0 +1,87 @@
+/* References and Disclaimer */
+.Disclaimer_and_References_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  display: none;
+}
+
+.Disclaimer_and_References{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  max-height: 80%;
+  background-color: #e5d4e8;
+  box-shadow: 0px 0px 30px #724200 inset;
+  font-size: medium;
+  font-family: "MedievalSharp", serif;
+  color: #985e00;
+  border-radius: 20px;
+  padding: 12px;
+  display: none;
+}
+
+
+.Disclaimer_and_References::-webkit-scrollbar {
+  width: 20px;
+}
+.Disclaimer_and_References::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.Disclaimer_and_References::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.Disclaimer_and_References::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.Disclaimer_and_References-content {
+  margin: 0 0 24px;
+}
+.Disclaimer_and_References-title{
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 1%;
+  border: solid 1px #d6dee1;
+  background-color: rgb(61, 68, 129);
+  margin: auto;
+}
+.Disclaimer_and_References-title:hover{
+  background-color: rgb(255, 255, 255);
+}
+.resources{
+  display: flex;
+  gap: 1%;
+}
+
+.Introduction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+#resources-item{
+  border: 1px solid ;
+  width: 24%;
+  height: 80%;
+}
+.prefix{
+  font-size: larger;
+  font-style: italic;
+  text-align: center;
+}
+.show {
+  display: block;
+}
